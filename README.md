@@ -107,9 +107,6 @@ The Verxio Protocol solution leverages these cryptographic methods to create a s
 - Obtaining a legal opinion on Verxio Protocol's regulatory compliance would be beneficial. However, since the StealthAddress contract is on the blockchain and the code is available on GitHub, funds will remain accessible even if the website is shut down.
 - Future UX improvements include notifications for funds received on new controlled stealth addresses and a mobile app (although the website is mobile-friendly). The possibilities are endless!
 
-### 🌟 Conclusion
-- Verxio Protocol is a user-friendly and innovative solution that addresses the growing need for privacy in blockchain transactions. By leveraging stealth addresses and the Klaytn Blockchain, Verxio Protocol provides a simple and cost-effective way for users to keep their financial transactions private. With a substantial market opportunity and a focus on usability, Verxio Protocol has the potential to become a leading privacy solution in the blockchain industry.
-
 ### 💪 Deployed Contract Addresses (Klaytn Baobab)
 - StealthAddress Contract: [0x4838854e5150E4345Fb4Ae837E9FcCa40D51F3Fe](https://baobab.scope.klaytn.com/address/0x4838854e5150E4345Fb4Ae837E9FcCa40D51F3Fe)
 
@@ -127,36 +124,21 @@ This repository includes an [unlicensed](http://unlicense.org/) statement.
 
 Clone the repository
 
-move into the frontend folder
-
 ```sh
-cd frontend
+git clone https://github.com/amdonatusprince/verxio-klaytn/
 ```
 
 install dependencies using **yarn** or **npm**
 
 ```sh
-yarn
-
-or
-
 npm install
 ```
 
-start the development server
+start the dApp
 ```sh
-yarn start
-
-or
-
-npm start
+npm run dev
 ```
 
-build with production mode
-```sh
-yarn build
+### 🌟 Conclusion
+- Verxio Protocol is a user-friendly and innovative solution that addresses the growing need for privacy in blockchain transactions. By leveraging stealth addresses and the Klaytn Blockchain, Verxio Protocol provides a simple and cost-effective way for users to keep their financial transactions private. With a substantial market opportunity and a focus on usability, Verxio Protocol has the potential to become a leading privacy solution in the blockchain industry.
 
-or
-
-npm run build
-```
