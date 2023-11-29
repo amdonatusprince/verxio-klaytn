@@ -143,6 +143,7 @@ export function Main() {
               style={{ display: activeTab === 'spend' ? 'block' : 'none' }}
             >
               < TransactionPool />
+
             </div>
 
           </div>

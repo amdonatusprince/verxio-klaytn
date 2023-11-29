@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import './panes.css';
-import { useTransaction } from 'wagmi'
+// import { useTransaction } from 'wagmi'
 import { curve, ec as EC } from 'elliptic';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -19,7 +19,7 @@ import { registryAddress, explorer } from '../utils/constants';
 import { calculateCrc } from '../utils/crc16';
 import useDebounce from '../utils/debounce';
 import { Connect } from './connect';
-import initializeStreamr from '../utils/initiateStreamr';
+// import initializeStreamr from '../utils/initiateStreamr';
 
 const zero = BigNumber.from(0);
 export function Send() {
@@ -75,9 +75,9 @@ export function Send() {
     hash: data?.hash,
   });
 
-  const { data: transaction} = useTransaction({
-    hash: data?.hash,
-  })
+  // const { data: transaction} = useTransaction({
+  //   hash: data?.hash,
+  // })
 
 // if (isSuccess){
 //   const { hash: transactionHash, 
@@ -222,38 +222,38 @@ export function Send() {
     }
   }, [amount, balance]);
 
-  useEffect(() => {
-    if (isSuccess) {
-      const { hash: transactionHash, 
-        from: fromAddress, 
-        to: toAddress, 
-        value: txnAmount } = transaction || {};
+  // useEffect(() => {
+  //   if (isSuccess) {
+  //     const { hash: transactionHash, 
+  //       from: fromAddress, 
+  //       to: toAddress, 
+  //       value: txnAmount } = transaction || {};
   
-      const streamTransaction = {
-        transactionHash,
-        fromAddress,
-        toAddress,
-        amount: ethers.utils.formatEther(txnAmount!)
-      };
+  //     const streamTransaction = {
+  //       transactionHash,
+  //       fromAddress,
+  //       toAddress,
+  //       amount: ethers.utils.formatEther(txnAmount!)
+  //     };
   
-      // Streamr function to Publish to Verxio Transaction pool
-      async function main() {
-        try {
-          const stream = await initializeStreamr();
+  //     // Streamr function to Publish to Verxio Transaction pool
+  //     async function main() {
+  //       try {
+  //         const stream = await initializeStreamr();
   
-          // Publish your message (assuming msg is defined)
-          await stream.publish(streamTransaction);
+  //         // Publish your message (assuming msg is defined)
+  //         await stream.publish(streamTransaction);
   
-          console.log('Message published successfully: ', streamTransaction);
-        } catch (error) {
-          console.error('Error:', error);
-        }
-      }
+  //         console.log('Message published successfully: ', streamTransaction);
+  //       } catch (error) {
+  //         console.error('Error:', error);
+  //       }
+  //     }
   
-      main();
-      console.log("Data published successfully!");
-    }
-  }, [isSuccess, transaction]);
+  //     main();
+  //     console.log("Data published successfully!");
+  //   }
+  // }, [isSuccess, transaction]);
   
 
 
