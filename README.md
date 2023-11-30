@@ -109,7 +109,10 @@ The Verxio Protocol solution leverages these cryptographic methods to create a s
 
 ### 💪 Deployed Contract Addresses (Klaytn Baobab)
 - StealthAddress Contract: [0x4838854e5150E4345Fb4Ae837E9FcCa40D51F3Fe](https://baobab.scope.klaytn.com/address/0x4838854e5150E4345Fb4Ae837E9FcCa40D51F3Fe)
+- Verxio DEMO Video: https://youtu.be/p4NHuwoUUvQ
+- Verxio DEMO Link: https://verxio-klaytn.vercel.app/
 
+- 
 ### 🚫 License
 This repository includes an [unlicensed](http://unlicense.org/) statement.
 
